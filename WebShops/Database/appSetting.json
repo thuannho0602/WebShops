@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DemoShopData": "Server=LAPTOP-IDV8BBRQ;Database=ShopOnli;Trusted_Connection=True;TrustServerCertificate=True;"
+  }
+}

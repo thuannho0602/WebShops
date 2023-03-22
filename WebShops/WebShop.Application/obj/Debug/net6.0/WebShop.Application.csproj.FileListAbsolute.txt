@@ -1,0 +1,12 @@
+D:\NguyenMinhThuan\Asp.Net\WebShops\WebShop.Application\bin\Debug\net6.0\WebShop.Application.deps.json
+D:\NguyenMinhThuan\Asp.Net\WebShops\WebShop.Application\bin\Debug\net6.0\WebShop.Application.dll
+D:\NguyenMinhThuan\Asp.Net\WebShops\WebShop.Application\bin\Debug\net6.0\WebShop.Application.pdb
+D:\NguyenMinhThuan\Asp.Net\WebShops\WebShop.Application\obj\Debug\net6.0\WebShop.Application.csproj.AssemblyReference.cache
+D:\NguyenMinhThuan\Asp.Net\WebShops\WebShop.Application\obj\Debug\net6.0\WebShop.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\NguyenMinhThuan\Asp.Net\WebShops\WebShop.Application\obj\Debug\net6.0\WebShop.Application.AssemblyInfoInputs.cache
+D:\NguyenMinhThuan\Asp.Net\WebShops\WebShop.Application\obj\Debug\net6.0\WebShop.Application.AssemblyInfo.cs
+D:\NguyenMinhThuan\Asp.Net\WebShops\WebShop.Application\obj\Debug\net6.0\WebShop.Application.csproj.CoreCompileInputs.cache
+D:\NguyenMinhThuan\Asp.Net\WebShops\WebShop.Application\obj\Debug\net6.0\WebShop.Application.dll
+D:\NguyenMinhThuan\Asp.Net\WebShops\WebShop.Application\obj\Debug\net6.0\refint\WebShop.Application.dll
+D:\NguyenMinhThuan\Asp.Net\WebShops\WebShop.Application\obj\Debug\net6.0\WebShop.Application.pdb
+D:\NguyenMinhThuan\Asp.Net\WebShops\WebShop.Application\obj\Debug\net6.0\ref\WebShop.Application.dll
