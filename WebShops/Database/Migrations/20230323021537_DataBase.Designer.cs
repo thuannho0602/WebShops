@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WebShops.Database.Migrations
 {
     [DbContext(typeof(DemoDbcontext))]
-    [Migration("20230322034753_DataBaseShop")]
-    partial class DataBaseShop
+    [Migration("20230323021537_DataBase")]
+    partial class DataBase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -52,7 +52,7 @@ namespace WebShops.Database.Migrations
                         new
                         {
                             Id = new Guid("30c3c812-22c7-41ee-8b82-b6d2ea0ae6cd"),
-                            ConcurrencyStamp = "51438869-d89b-42fb-a62b-7b03db2afd9c",
+                            ConcurrencyStamp = "8de6ce43-8dcf-439c-829e-d0c4435a83b0",
                             Description = "Administrator role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -129,7 +129,7 @@ namespace WebShops.Database.Migrations
                         {
                             Id = new Guid("1bf6041a-0963-4eb7-bbdc-0ab25b0e301d"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7f0fedcc-54c3-4a93-bcb8-ce1ffd2e7ad3",
+                            ConcurrencyStamp = "9dbaeb0c-e255-48ca-af14-397f21d46a99",
                             DOB = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "thuannho0602@gmail.com",
                             EmailConfirmed = true,
@@ -138,7 +138,7 @@ namespace WebShops.Database.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "thuannho0602@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAECK0hqe97aNZWxHPG1+OkpA3YcSuz5jktMI/YAp1fO9KtCNGPsrZYyEWoTOEKYFMYQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEP2jb3ih1OkuSgM94hd3g3zRkf/jqSaXdveNLV6J9YTOvKKhlHv2ZI1EoeNGZ55FfQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -463,7 +463,7 @@ namespace WebShops.Database.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreacted = new DateTime(2023, 3, 22, 10, 47, 53, 611, DateTimeKind.Local).AddTicks(1092),
+                            DateCreacted = new DateTime(2023, 3, 23, 9, 15, 37, 455, DateTimeKind.Local).AddTicks(9289),
                             IsFeaatured = false,
                             Originalprice = 10000m,
                             Price = 2000m,
@@ -473,7 +473,7 @@ namespace WebShops.Database.Migrations
                         new
                         {
                             Id = 2,
-                            DateCreacted = new DateTime(2023, 3, 22, 10, 47, 53, 611, DateTimeKind.Local).AddTicks(1104),
+                            DateCreacted = new DateTime(2023, 3, 23, 9, 15, 37, 455, DateTimeKind.Local).AddTicks(9301),
                             IsFeaatured = false,
                             Originalprice = 10000m,
                             Price = 2000m,
@@ -492,7 +492,8 @@ namespace WebShops.Database.Migrations
 
                     b.Property<string>("Caption")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime2");
@@ -502,7 +503,8 @@ namespace WebShops.Database.Migrations
 
                     b.Property<string>("ImagePath")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<bool>("IsDefault")
                         .HasColumnType("bit");

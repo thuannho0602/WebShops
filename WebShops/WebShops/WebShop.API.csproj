@@ -15,7 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Database\WebShops.Database.csproj" />
+    <ProjectReference Include="..\WebShop.Application\WebShop.Application.csproj" />
+    <ProjectReference Include="..\WebShop.ViewModels\WebShop.ViewModels.csproj" />
+    <ProjectReference Include="..\WebShops.Utilities\WebShops.Utilities.csproj" />
   </ItemGroup>
 
 </Project>
