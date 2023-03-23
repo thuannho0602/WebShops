@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TRE3oeejtvX5h+Z0RmdphuROl8SzImC/VwQ6lLJQtziYbFCP0BzeuCKsAP7q7kM5Im1nYeQ8t0um4A7ieH7+jA==",
+  "dgSpecHash": "Oy7sttuOu4N2ho/KWStzBWDGN1sYUFAbfNeAJ8wf6U3VSi0ni93Ft72vj4+fHD4YHFr8qeQjUu0iCVKRmtFvZA==",
   "success": true,
-  "projectFilePath": "D:\\NguyenMinhThuan\\Asp.Net\\WebShops\\Database\\WebShops.Database.csproj",
+  "projectFilePath": "D:\\WebShops\\WebShops\\Database\\WebShops.Database.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AD\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\AD\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",

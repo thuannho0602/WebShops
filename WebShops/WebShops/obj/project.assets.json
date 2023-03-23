@@ -230,11 +230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NguyenMinhThuan\\Asp.Net\\WebShops\\WebShops\\WebShop.API.csproj",
+      "projectUniqueName": "D:\\WebShops\\WebShops\\WebShops\\WebShop.API.csproj",
       "projectName": "WebShop.API",
-      "projectPath": "D:\\NguyenMinhThuan\\Asp.Net\\WebShops\\WebShops\\WebShop.API.csproj",
+      "projectPath": "D:\\WebShops\\WebShops\\WebShops\\WebShop.API.csproj",
       "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
-      "outputPath": "D:\\NguyenMinhThuan\\Asp.Net\\WebShops\\WebShops\\obj\\",
+      "outputPath": "D:\\WebShops\\WebShops\\WebShops\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

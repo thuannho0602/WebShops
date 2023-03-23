@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NguyenMinhThuan\\Asp.Net\\WebShops\\Database\\WebShops.Database.csproj": {}
+    "D:\\WebShops\\WebShops\\Database\\WebShops.Database.csproj": {}
   },
   "projects": {
-    "D:\\NguyenMinhThuan\\Asp.Net\\WebShops\\Database\\WebShops.Database.csproj": {
+    "D:\\WebShops\\WebShops\\Database\\WebShops.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NguyenMinhThuan\\Asp.Net\\WebShops\\Database\\WebShops.Database.csproj",
+        "projectUniqueName": "D:\\WebShops\\WebShops\\Database\\WebShops.Database.csproj",
         "projectName": "WebShops.Database",
-        "projectPath": "D:\\NguyenMinhThuan\\Asp.Net\\WebShops\\Database\\WebShops.Database.csproj",
+        "projectPath": "D:\\WebShops\\WebShops\\Database\\WebShops.Database.csproj",
         "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
-        "outputPath": "D:\\NguyenMinhThuan\\Asp.Net\\WebShops\\Database\\obj\\",
+        "outputPath": "D:\\WebShops\\WebShops\\Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
