@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Catalog\user-content\" />
+    <Folder Include="user-content\" />
   </ItemGroup>
 
 </Project>

@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "Oy7sttuOu4N2ho/KWStzBWDGN1sYUFAbfNeAJ8wf6U3VSi0ni93Ft72vj4+fHD4YHFr8qeQjUu0iCVKRmtFvZA==",
-=======
   "dgSpecHash": "UV+BbJ4jsxnv8d3BK0jQVgDRULKauEANJ2LKBlQfqfDGSlsIvMOSQjQJYyl2PRfSw4b6a46qlWBtqUU/k/dtaw==",
->>>>>>> thuan
   "success": true,
   "projectFilePath": "D:\\WebShops\\WebShops\\Database\\WebShops.Database.csproj",
   "expectedPackageFiles": [

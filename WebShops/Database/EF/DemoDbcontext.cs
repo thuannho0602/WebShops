@@ -21,7 +21,7 @@ namespace Demo.DataBase.EF
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.ApplyConfiguration(new Appconfig());
+            modelBuilder.ApplyConfiguration(new Appconfig());
             modelBuilder.ApplyConfiguration(new CartConfig());
             modelBuilder.ApplyConfiguration(new CategoryConfig());
             modelBuilder.ApplyConfiguration(new CategoryTranslationConfig());
@@ -69,13 +69,6 @@ namespace Demo.DataBase.EF
         public DbSet<Promotion> Promotions { get; set; }
         public DbSet<Slide> Slides { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
-
-
-
-
-
-
-
 
 
     }

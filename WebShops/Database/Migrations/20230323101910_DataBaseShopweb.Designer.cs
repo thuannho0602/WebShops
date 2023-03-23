@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WebShops.Database.Migrations
 {
     [DbContext(typeof(DemoDbcontext))]
-    [Migration("20230323021537_DataBase")]
-    partial class DataBase
+    [Migration("20230323101910_DataBaseShopweb")]
+    partial class DataBaseShopweb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,6 +23,38 @@ namespace WebShops.Database.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("Demo.DataBase.Entity.Appconfigsa", b =>
+                {
+                    b.Property<string>("Value")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Value");
+
+                    b.ToTable("AppConfig", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Value = "eeeeeeeeeee",
+                            Key = "Nguyen Minh Thuan"
+                        },
+                        new
+                        {
+                            Value = "ddddddddddddddd",
+                            Key = " Minh Thuan"
+                        },
+                        new
+                        {
+                            Value = "hhhhhhhhhh",
+                            Key = "Nguyen Minh "
+                        });
+                });
 
             modelBuilder.Entity("Demo.DataBase.Entity.AppRole", b =>
                 {
@@ -52,7 +84,7 @@ namespace WebShops.Database.Migrations
                         new
                         {
                             Id = new Guid("30c3c812-22c7-41ee-8b82-b6d2ea0ae6cd"),
-                            ConcurrencyStamp = "8de6ce43-8dcf-439c-829e-d0c4435a83b0",
+                            ConcurrencyStamp = "c263bf02-aa9a-4e85-94c1-2f5cee9e6c28",
                             Description = "Administrator role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -129,7 +161,7 @@ namespace WebShops.Database.Migrations
                         {
                             Id = new Guid("1bf6041a-0963-4eb7-bbdc-0ab25b0e301d"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "9dbaeb0c-e255-48ca-af14-397f21d46a99",
+                            ConcurrencyStamp = "9de65f08-5149-4330-bfa1-163370edcd17",
                             DOB = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "thuannho0602@gmail.com",
                             EmailConfirmed = true,
@@ -138,7 +170,7 @@ namespace WebShops.Database.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "thuannho0602@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEP2jb3ih1OkuSgM94hd3g3zRkf/jqSaXdveNLV6J9YTOvKKhlHv2ZI1EoeNGZ55FfQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAENSNharkYfvsrduiS2810lSn34yyIbCITT8T8vgr3un5qHvyVWzTujRbqhCm1yhOFw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -463,7 +495,7 @@ namespace WebShops.Database.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreacted = new DateTime(2023, 3, 23, 9, 15, 37, 455, DateTimeKind.Local).AddTicks(9289),
+                            DateCreacted = new DateTime(2023, 3, 23, 17, 19, 10, 550, DateTimeKind.Local).AddTicks(6736),
                             IsFeaatured = false,
                             Originalprice = 10000m,
                             Price = 2000m,
@@ -473,7 +505,7 @@ namespace WebShops.Database.Migrations
                         new
                         {
                             Id = 2,
-                            DateCreacted = new DateTime(2023, 3, 23, 9, 15, 37, 455, DateTimeKind.Local).AddTicks(9301),
+                            DateCreacted = new DateTime(2023, 3, 23, 17, 19, 10, 550, DateTimeKind.Local).AddTicks(6751),
                             IsFeaatured = false,
                             Originalprice = 10000m,
                             Price = 2000m,

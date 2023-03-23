@@ -18,10 +18,10 @@ namespace WebShop.API.Controllers
             _manageProductService = manageProductService;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Get()
+        [HttpGet("{LanguageId}")]
+        public async Task<IActionResult> Get(string languageId)
         {
-            var products = await _productService.GetAll();
+            var products = await _productService.GetAll( languageId);
             return Ok(products);
 
         }
@@ -32,11 +32,11 @@ namespace WebShop.API.Controllers
             var products = await _productService.GetAllCategoryId(request);
             return Ok(products);
         }
-        [HttpGet("productId")]
-        public async Task<IActionResult> GetAllById(int productId)
+        [HttpGet("{Id}/{languageId}")]
+        public async Task<IActionResult> GetAllById(int productId,string languageId)
         {
-            var products = await _manageProductService.GetAllById(productId);
-            if(products == null)
+            var products = await _manageProductService.GetAllById(productId,languageId);
+            if (products == null)
             {
                 return BadRequest("CanNot find product");
             }
@@ -46,19 +46,19 @@ namespace WebShop.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody]ProductCreateRequest request)
+        public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
         {
             var productId = await _manageProductService.Create(request);
             if (productId == null)
             {
                 return BadRequest("Cannot Find product");
             }
-            var product =  _manageProductService.GetAllById(productId);
-            return CreatedAtAction(nameof(GetAllById), new {id=product}, product);
+            var product = _manageProductService.GetAllById(productId,request.LanguageId);
+            return CreatedAtAction(nameof(GetAllById), new { id = product }, product);
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update([FromBody] ProductUpdateRequest request)
+        public async Task<IActionResult> Update([FromForm] ProductUpdateRequest request)
         {
             var affectedResust = await _manageProductService.Update(request);
             if (affectedResust == 0)
@@ -68,14 +68,24 @@ namespace WebShop.API.Controllers
             return Ok();
         }
         [HttpPut("Price/{newPrice}")]
-        public async Task<IActionResult> UpdatePrice([FromQuery]int Id,decimal newPrice)
+        public async Task<IActionResult> UpdatePrice([FromForm] int Id, decimal newPrice)
         {
-            var isSuccessful = await _manageProductService.UpdatePrice(Id,newPrice);
+            var isSuccessful = await _manageProductService.UpdatePrice(Id, newPrice);
             if (isSuccessful)
             {
                 return Ok();
             }
             return BadRequest("Cannot Find product");
+        }
+        [HttpDelete("productId")]
+        public async Task<IActionResult> Delete(int productId)
+        {
+            var deleteId=await _manageProductService.Delete(productId);
+            if(deleteId == 0)
+            {
+                return BadRequest();
+            }
+            return Ok();
         }
     }
 }

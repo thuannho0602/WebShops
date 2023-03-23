@@ -4,6 +4,7 @@ using Demo.DataBase.EF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WebShops.Database.Migrations
 {
     [DbContext(typeof(DemoDbcontext))]
-    partial class DemoDbcontextModelSnapshot : ModelSnapshot
+    [Migration("20230323101239_DataBaseShopWeb22")]
+    partial class DataBaseShopWeb22
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,23 +37,6 @@ namespace WebShops.Database.Migrations
                     b.HasKey("Value");
 
                     b.ToTable("AppConfig", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Value = "eeeeeeeeeee",
-                            Key = "Nguyen Minh Thuan"
-                        },
-                        new
-                        {
-                            Value = "ddddddddddddddd",
-                            Key = " Minh Thuan"
-                        },
-                        new
-                        {
-                            Value = "hhhhhhhhhh",
-                            Key = "Nguyen Minh "
-                        });
                 });
 
             modelBuilder.Entity("Demo.DataBase.Entity.AppRole", b =>
@@ -77,16 +62,6 @@ namespace WebShops.Database.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppRole", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("30c3c812-22c7-41ee-8b82-b6d2ea0ae6cd"),
-                            ConcurrencyStamp = "c263bf02-aa9a-4e85-94c1-2f5cee9e6c28",
-                            Description = "Administrator role",
-                            Name = "admin",
-                            NormalizedName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("Demo.DataBase.Entity.AppUser", b =>
@@ -153,27 +128,6 @@ namespace WebShops.Database.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppUser", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("1bf6041a-0963-4eb7-bbdc-0ab25b0e301d"),
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "9de65f08-5149-4330-bfa1-163370edcd17",
-                            DOB = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "thuannho0602@gmail.com",
-                            EmailConfirmed = true,
-                            FirstName = "THuan",
-                            LastName = "Nguyen",
-                            LockoutEnabled = false,
-                            NormalizedEmail = "thuannho0602@gmail.com",
-                            NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAENSNharkYfvsrduiS2810lSn34yyIbCITT8T8vgr3un5qHvyVWzTujRbqhCm1yhOFw==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "",
-                            TwoFactorEnabled = false,
-                            UserName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("Demo.DataBase.Entity.Cart", b =>
@@ -227,22 +181,6 @@ namespace WebShops.Database.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Category", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            IsShowonHome = true,
-                            SortOrder = 1,
-                            Status = 1
-                        },
-                        new
-                        {
-                            Id = 2,
-                            IsShowonHome = true,
-                            SortOrder = 1,
-                            Status = 1
-                        });
                 });
 
             modelBuilder.Entity("Demo.DataBase.Entity.CategoryTranslation", b =>
@@ -288,28 +226,6 @@ namespace WebShops.Database.Migrations
                     b.HasIndex("LanguageId");
 
                     b.ToTable("CategoryTranslation", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CategoryId = 1,
-                            LanguageId = "vi",
-                            Name = "Áo Nam",
-                            SeoAlias = "Ao-Nam",
-                            SeoDesCription = "Sẩn Phẩm Thời Trang Nam ",
-                            SeoTile = "Sẩn Phẩm Thời Trang Nam"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CategoryId = 2,
-                            LanguageId = "en",
-                            Name = "Men-Shirt",
-                            SeoAlias = "Men-Shirt",
-                            SeoDesCription = "Men's Fashion Products ",
-                            SeoTile = "Men's Fashion Products"
-                        });
                 });
 
             modelBuilder.Entity("Demo.DataBase.Entity.Contact", b =>
@@ -365,20 +281,6 @@ namespace WebShops.Database.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Language", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "vi",
-                            IsDefault = true,
-                            Name = "Tiếng Việt"
-                        },
-                        new
-                        {
-                            Id = "en",
-                            IsDefault = false,
-                            Name = "English"
-                        });
                 });
 
             modelBuilder.Entity("Demo.DataBase.Entity.Order", b =>
@@ -488,28 +390,6 @@ namespace WebShops.Database.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Product", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            DateCreacted = new DateTime(2023, 3, 23, 17, 19, 10, 550, DateTimeKind.Local).AddTicks(6736),
-                            IsFeaatured = false,
-                            Originalprice = 10000m,
-                            Price = 2000m,
-                            Stock = 0,
-                            ViewCount = 0
-                        },
-                        new
-                        {
-                            Id = 2,
-                            DateCreacted = new DateTime(2023, 3, 23, 17, 19, 10, 550, DateTimeKind.Local).AddTicks(6751),
-                            IsFeaatured = false,
-                            Originalprice = 10000m,
-                            Price = 2000m,
-                            Stock = 0,
-                            ViewCount = 0
-                        });
                 });
 
             modelBuilder.Entity("Demo.DataBase.Entity.ProductImage", b =>
@@ -565,13 +445,6 @@ namespace WebShops.Database.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("ProcductInCategory", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            ProductId = 1,
-                            CategoryId = 1
-                        });
                 });
 
             modelBuilder.Entity("Demo.DataBase.Entity.ProductTranslation", b =>
@@ -625,32 +498,6 @@ namespace WebShops.Database.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductTranslation", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Description = "Áo Sơ Mi Nam Trắng Minh Thuận",
-                            Details = "Áo Sơ Mi Nam Trắng Minh Thuận",
-                            LanguageId = "vi",
-                            Name = "Áo Sơ Mi Nam Trắng Minh Thuận",
-                            ProductId = 1,
-                            SeoAlias = "ao-so-mi-nam-trang-minh-thuan",
-                            SeoDescription = "Áo Sơ Mi Nam Trắng Minh Thuận ",
-                            SeoTitle = "Áo Sơ Mi Nam Trắng Minh Thuận"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Description = "Minh Thuan Men's White Shirt",
-                            Details = "Minh Thuan Men's White Shirt",
-                            LanguageId = "en",
-                            Name = "Minh Thuan Men's White Shirt",
-                            ProductId = 2,
-                            SeoAlias = "minh-thuan-men's-white-shirt",
-                            SeoDescription = "Minh Thuan Men's White Shirt ",
-                            SeoTitle = "Minh Thuan Men's White Shirt"
-                        });
                 });
 
             modelBuilder.Entity("Demo.DataBase.Entity.Promotion", b =>
@@ -734,68 +581,6 @@ namespace WebShops.Database.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Slide", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Description = "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
-                            Image = "/themes/images/carousel/1.png",
-                            Name = "Second Thumbnail label",
-                            SortOrder = 1,
-                            Status = 1,
-                            Url = "#"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Description = "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
-                            Image = "/themes/images/carousel/2.png",
-                            Name = "Second Thumbnail label",
-                            SortOrder = 2,
-                            Status = 1,
-                            Url = "#"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Description = "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
-                            Image = "/themes/images/carousel/3.png",
-                            Name = "Second Thumbnail label",
-                            SortOrder = 3,
-                            Status = 1,
-                            Url = "#"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Description = "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
-                            Image = "/themes/images/carousel/4.png",
-                            Name = "Second Thumbnail label",
-                            SortOrder = 4,
-                            Status = 1,
-                            Url = "#"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Description = "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
-                            Image = "/themes/images/carousel/5.png",
-                            Name = "Second Thumbnail label",
-                            SortOrder = 5,
-                            Status = 1,
-                            Url = "#"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Description = "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
-                            Image = "/themes/images/carousel/6.png",
-                            Name = "Second Thumbnail label",
-                            SortOrder = 6,
-                            Status = 1,
-                            Url = "#"
-                        });
                 });
 
             modelBuilder.Entity("Demo.DataBase.Entity.Transaction", b =>
@@ -919,13 +704,6 @@ namespace WebShops.Database.Migrations
                     b.HasKey("UserId", "RoleId");
 
                     b.ToTable("appUserRole", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = new Guid("1bf6041a-0963-4eb7-bbdc-0ab25b0e301d"),
-                            RoleId = new Guid("30c3c812-22c7-41ee-8b82-b6d2ea0ae6cd")
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>

@@ -27,8 +27,8 @@ namespace WebShop.Application.Catalog.Productt
 
         Task AddViewCount(int productId);
 
-        Task< List<ProductViewMode>> GetAll();
-        Task<ProductViewMode>GetAllById(int productId);
+        Task< List<ProductViewMode>> GetAll(string languageId);
+        Task<ProductViewMode>GetAllById(int productId,string languageId);
 
         Task<PagedResult<ProductViewMode>> GetAllPaging(GetManageProductPagingRequest request);
 

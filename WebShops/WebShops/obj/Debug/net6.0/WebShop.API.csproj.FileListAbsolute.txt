@@ -92,3 +92,4 @@ D:\WebShops\WebShops\WebShops\bin\Debug\net6.0\WebShops.Database.pdb
 D:\WebShops\WebShops\WebShops\bin\Debug\net6.0\WebShop.Application.pdb
 D:\WebShops\WebShops\WebShops\bin\Debug\net6.0\WebShop.ViewModels.pdb
 D:\WebShops\WebShops\WebShops\bin\Debug\net6.0\WebShops.Utilities.pdb
+D:\WebShops\WebShops\WebShops\bin\Debug\net6.0\WebShop.API.staticwebassets.runtime.json

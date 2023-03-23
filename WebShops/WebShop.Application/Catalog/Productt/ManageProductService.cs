@@ -226,12 +226,33 @@ namespace WebShop.Application.Catalog.Productt
             throw new NotImplementedException();
         }
 
-        Task<List<ProductViewMode>> IManageProductService.GetAll()
+       
+
+      
+
+        public async Task<ProductViewMode> GetAllById(int productId, string languageId)
         {
-            throw new NotImplementedException();
+            var product = await _contex.Products.FindAsync(productId);
+            var productTranslation=await _contex.ProductTranslations.FirstOrDefaultAsync(x=>x.ProductId==productId&& x.LanguageId==languageId);
+            var productViewModel = new ProductViewMode()
+            {
+                Id = product.Id,
+                DateCreacted = product.DateCreacted,
+                Description = productTranslation != null ? productTranslation.Description : null,
+                LanguageId = productTranslation.LanguageId,
+                Name = productTranslation != null ? productTranslation.Name : null,
+                Originalprice = product.Originalprice,
+                Price = product.Price,
+                SeoAlias = productTranslation != null ? productTranslation.SeoAlias : null,
+                SeoDescription = productTranslation != null ? productTranslation.SeoDescription : null,
+                SeoTitle = productTranslation != null ? productTranslation.SeoTitle : null,
+                Stock=product.Stock,
+                ViewCount=product.ViewCount,
+            };
+            return productViewModel;
         }
 
-        public Task<ProductViewMode> GetAllById(int productId)
+        public Task<List<ProductViewMode>> GetAll(string languageId)
         {
             throw new NotImplementedException();
         }

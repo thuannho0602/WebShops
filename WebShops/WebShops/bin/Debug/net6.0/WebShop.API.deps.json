@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "WebShop.API/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.0",
           "Swashbuckle.AspNetCore": "6.2.3",
           "WebShop.Application": "1.0.0",
           "WebShop.ViewModels": "1.0.0",

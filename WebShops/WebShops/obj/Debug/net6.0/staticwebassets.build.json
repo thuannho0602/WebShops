@@ -1,11 +1,105 @@
 {
   "Version": 1,
-  "Hash": "NCohVLg97Ox7QNsNL2nc2pKM/CIJbSuGF282j9bZ+Jo=",
+  "Hash": "yHFs9nwowgH9IxjtYOK5+h8UQYFFnGRvpdgD9X/o/48=",
   "Source": "WebShop.API",
   "BasePath": "_content/WebShop.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebShop.API\\wwwroot",
+      "Source": "WebShop.API",
+      "ContentRoot": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\",
+      "BasePath": "_content/WebShop.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\user-content\\0deb97ff-4db5-446f-bc02-da395dcc6149.png",
+      "SourceId": "WebShop.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\",
+      "BasePath": "_content/WebShop.API",
+      "RelativePath": "user-content/0deb97ff-4db5-446f-bc02-da395dcc6149.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-content\\0deb97ff-4db5-446f-bc02-da395dcc6149.png"
+    },
+    {
+      "Identity": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\user-content\\11d967d2-d399-4e34-9a2f-3f9070c25008.jpg",
+      "SourceId": "WebShop.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\",
+      "BasePath": "_content/WebShop.API",
+      "RelativePath": "user-content/11d967d2-d399-4e34-9a2f-3f9070c25008.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-content\\11d967d2-d399-4e34-9a2f-3f9070c25008.jpg"
+    },
+    {
+      "Identity": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\user-content\\50223b58-08a2-4352-859b-7386c32c7048.png",
+      "SourceId": "WebShop.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\",
+      "BasePath": "_content/WebShop.API",
+      "RelativePath": "user-content/50223b58-08a2-4352-859b-7386c32c7048.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-content\\50223b58-08a2-4352-859b-7386c32c7048.png"
+    },
+    {
+      "Identity": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\user-content\\8b7fa786-0d9c-40fc-8cf7-0bb8fa4a12ec.png",
+      "SourceId": "WebShop.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\",
+      "BasePath": "_content/WebShop.API",
+      "RelativePath": "user-content/8b7fa786-0d9c-40fc-8cf7-0bb8fa4a12ec.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-content\\8b7fa786-0d9c-40fc-8cf7-0bb8fa4a12ec.png"
+    },
+    {
+      "Identity": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\user-content\\8bd75c9d-08bf-4339-af6f-6465d13119a1.png",
+      "SourceId": "WebShop.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\",
+      "BasePath": "_content/WebShop.API",
+      "RelativePath": "user-content/8bd75c9d-08bf-4339-af6f-6465d13119a1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-content\\8bd75c9d-08bf-4339-af6f-6465d13119a1.png"
+    }
+  ]
 }

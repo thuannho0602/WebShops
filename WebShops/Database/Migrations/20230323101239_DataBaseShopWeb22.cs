@@ -5,10 +5,22 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WebShops.Database.Migrations
 {
-    public partial class DataBase : Migration
+    public partial class DataBaseShopWeb22 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "AppConfig",
+                columns: table => new
+                {
+                    Value = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Key = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AppConfig", x => x.Value);
+                });
+
             migrationBuilder.CreateTable(
                 name: "AppRole",
                 columns: table => new
@@ -443,84 +455,6 @@ namespace WebShops.Database.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.InsertData(
-                table: "AppRole",
-                columns: new[] { "Id", "ConcurrencyStamp", "Description", "Name", "NormalizedName" },
-                values: new object[] { new Guid("30c3c812-22c7-41ee-8b82-b6d2ea0ae6cd"), "8de6ce43-8dcf-439c-829e-d0c4435a83b0", "Administrator role", "admin", "admin" });
-
-            migrationBuilder.InsertData(
-                table: "AppUser",
-                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "DOB", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { new Guid("1bf6041a-0963-4eb7-bbdc-0ab25b0e301d"), 0, "9dbaeb0c-e255-48ca-af14-397f21d46a99", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "thuannho0602@gmail.com", true, "THuan", "Nguyen", false, null, "thuannho0602@gmail.com", "admin", "AQAAAAEAACcQAAAAEP2jb3ih1OkuSgM94hd3g3zRkf/jqSaXdveNLV6J9YTOvKKhlHv2ZI1EoeNGZ55FfQ==", null, false, "", false, "admin" });
-
-            migrationBuilder.InsertData(
-                table: "Category",
-                columns: new[] { "Id", "IsShowonHome", "ParentId", "SortOrder", "Status" },
-                values: new object[,]
-                {
-                    { 1, true, null, 1, 1 },
-                    { 2, true, null, 1, 1 }
-                });
-
-            migrationBuilder.InsertData(
-                table: "Language",
-                columns: new[] { "Id", "IsDefault", "Name" },
-                values: new object[,]
-                {
-                    { "en", false, "English" },
-                    { "vi", true, "Tiếng Việt" }
-                });
-
-            migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "Id", "DateCreacted", "IsFeaatured", "Originalprice", "Price" },
-                values: new object[,]
-                {
-                    { 1, new DateTime(2023, 3, 23, 9, 15, 37, 455, DateTimeKind.Local).AddTicks(9289), false, 10000m, 2000m },
-                    { 2, new DateTime(2023, 3, 23, 9, 15, 37, 455, DateTimeKind.Local).AddTicks(9301), false, 10000m, 2000m }
-                });
-
-            migrationBuilder.InsertData(
-                table: "Slide",
-                columns: new[] { "Id", "Description", "Image", "Name", "SortOrder", "Status", "Url" },
-                values: new object[,]
-                {
-                    { 1, "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.", "/themes/images/carousel/1.png", "Second Thumbnail label", 1, 1, "#" },
-                    { 2, "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.", "/themes/images/carousel/2.png", "Second Thumbnail label", 2, 1, "#" },
-                    { 3, "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.", "/themes/images/carousel/3.png", "Second Thumbnail label", 3, 1, "#" },
-                    { 4, "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.", "/themes/images/carousel/4.png", "Second Thumbnail label", 4, 1, "#" },
-                    { 5, "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.", "/themes/images/carousel/5.png", "Second Thumbnail label", 5, 1, "#" },
-                    { 6, "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.", "/themes/images/carousel/6.png", "Second Thumbnail label", 6, 1, "#" }
-                });
-
-            migrationBuilder.InsertData(
-                table: "appUserRole",
-                columns: new[] { "RoleId", "UserId" },
-                values: new object[] { new Guid("30c3c812-22c7-41ee-8b82-b6d2ea0ae6cd"), new Guid("1bf6041a-0963-4eb7-bbdc-0ab25b0e301d") });
-
-            migrationBuilder.InsertData(
-                table: "CategoryTranslation",
-                columns: new[] { "Id", "CategoryId", "LanguageId", "Name", "SeoAlias", "SeoDesCription", "SeoTile" },
-                values: new object[,]
-                {
-                    { 1, 1, "vi", "Áo Nam", "Ao-Nam", "Sẩn Phẩm Thời Trang Nam ", "Sẩn Phẩm Thời Trang Nam" },
-                    { 2, 2, "en", "Men-Shirt", "Men-Shirt", "Men's Fashion Products ", "Men's Fashion Products" }
-                });
-
-            migrationBuilder.InsertData(
-                table: "ProcductInCategory",
-                columns: new[] { "CategoryId", "ProductId" },
-                values: new object[] { 1, 1 });
-
-            migrationBuilder.InsertData(
-                table: "ProductTranslation",
-                columns: new[] { "Id", "Description", "Details", "LanguageId", "Name", "ProductId", "SeoAlias", "SeoDescription", "SeoTitle" },
-                values: new object[,]
-                {
-                    { 1, "Áo Sơ Mi Nam Trắng Minh Thuận", "Áo Sơ Mi Nam Trắng Minh Thuận", "vi", "Áo Sơ Mi Nam Trắng Minh Thuận", 1, "ao-so-mi-nam-trang-minh-thuan", "Áo Sơ Mi Nam Trắng Minh Thuận ", "Áo Sơ Mi Nam Trắng Minh Thuận" },
-                    { 2, "Minh Thuan Men's White Shirt", "Minh Thuan Men's White Shirt", "en", "Minh Thuan Men's White Shirt", 2, "minh-thuan-men's-white-shirt", "Minh Thuan Men's White Shirt ", "Minh Thuan Men's White Shirt" }
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_Cart_ProcductId",
                 table: "Cart",
@@ -602,6 +536,9 @@ namespace WebShops.Database.Migrations
             migrationBuilder.DropForeignKey(
                 name: "FK_Order_OrderDatail_OrderDatailOrderId_OrderDatailProductId",
                 table: "Order");
+
+            migrationBuilder.DropTable(
+                name: "AppConfig");
 
             migrationBuilder.DropTable(
                 name: "AppRole");

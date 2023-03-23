@@ -15,6 +15,6 @@ namespace WebShop.Application.Catalog.Productt
     {
        Task< PagedResult<ProductViewMode>> GetAllCategoryId(GetPublictProductPadingRequest request);
 
-        Task<List<ProductViewMode>> GetAll();
+        Task<List<ProductViewMode>> GetAll(string languageId);
     }
 }

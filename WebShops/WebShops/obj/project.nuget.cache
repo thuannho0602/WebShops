@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "sYolmZ7RaomTEmVz1R8NHme2uU1tpd7zdOB6wt3wN2YY4ZZHr9tK5qH1SkGhvGFYxxxjPZctao1qY/PetzHz2w==",
-=======
-  "dgSpecHash": "w6xY87egPouMDPObMdDNEMgR31ibWcgp09MMXlx8UTQAVfWb1Dp4e3raLTUqm5czANd9F/SUdcc0woq6Gt3bYQ==",
->>>>>>> thuan
+  "dgSpecHash": "HtPf5GPqyQjcA6RclQuikPpoMjC8YAQ+k2h4kSasvcx6l+TjRXUezESl5Z5b+Y+LkeGBHvjfzx+PHJKHikpajw==",
   "success": true,
   "projectFilePath": "D:\\WebShops\\WebShops\\WebShops\\WebShop.API.csproj",
   "expectedPackageFiles": [

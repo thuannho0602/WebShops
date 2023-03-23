@@ -15,11 +15,11 @@ namespace Demo.DataBase.Extensions
     {
         public static void Seed(this ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Appconfigsa>().HasData(
-            //   new Appconfigsa() { Key = "Nguyen Minh Thuan", Value = "afdfdfds" },
-            //   new Appconfigsa() { Key = " Minh Thuan", Value = "afdfdfvddfdds" },
-            //   new Appconfigsa() { Key = "Nguyen Minh ", Value = "afdfdfds" }
-            //    );
+            modelBuilder.Entity<Appconfigsa>().HasData(
+               new Appconfigsa() { Key = "Nguyen Minh Thuan", Value = "eeeeeeeeeee" },
+               new Appconfigsa() { Key = " Minh Thuan", Value = "ddddddddddddddd" },
+               new Appconfigsa() { Key = "Nguyen Minh ", Value = "hhhhhhhhhh" }
+                );
 
             modelBuilder.Entity<Language>().HasData(
                new Language() { Id = "vi", Name = "Tiếng Việt", IsDefault = true },

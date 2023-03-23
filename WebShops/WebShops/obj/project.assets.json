@@ -3224,6 +3224,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.EntityFrameworkCore >= 6.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3",
       "WebShop.Application >= 1.0.0",
       "WebShop.ViewModels >= 1.0.0",
@@ -3289,6 +3290,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
