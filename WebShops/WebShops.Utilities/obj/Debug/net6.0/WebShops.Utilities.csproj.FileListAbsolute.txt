@@ -1,0 +1,12 @@
+D:\WebShops\WebShops\WebShops.Utilities\bin\Debug\net6.0\WebShops.Utilities.deps.json
+D:\WebShops\WebShops\WebShops.Utilities\bin\Debug\net6.0\WebShops.Utilities.dll
+D:\WebShops\WebShops\WebShops.Utilities\bin\Debug\net6.0\WebShops.Utilities.pdb
+D:\WebShops\WebShops\WebShops.Utilities\obj\Debug\net6.0\WebShops.Utilities.csproj.AssemblyReference.cache
+D:\WebShops\WebShops\WebShops.Utilities\obj\Debug\net6.0\WebShops.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebShops\WebShops\WebShops.Utilities\obj\Debug\net6.0\WebShops.Utilities.AssemblyInfoInputs.cache
+D:\WebShops\WebShops\WebShops.Utilities\obj\Debug\net6.0\WebShops.Utilities.AssemblyInfo.cs
+D:\WebShops\WebShops\WebShops.Utilities\obj\Debug\net6.0\WebShops.Utilities.csproj.CoreCompileInputs.cache
+D:\WebShops\WebShops\WebShops.Utilities\obj\Debug\net6.0\WebShops.Utilities.dll
+D:\WebShops\WebShops\WebShops.Utilities\obj\Debug\net6.0\refint\WebShops.Utilities.dll
+D:\WebShops\WebShops\WebShops.Utilities\obj\Debug\net6.0\WebShops.Utilities.pdb
+D:\WebShops\WebShops\WebShops.Utilities\obj\Debug\net6.0\ref\WebShops.Utilities.dll

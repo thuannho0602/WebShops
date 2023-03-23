@@ -1,0 +1,12 @@
+D:\WebShops\WebShops\WebShop.ViewModels\obj\Debug\net6.0\WebShop.ViewModels.csproj.AssemblyReference.cache
+D:\WebShops\WebShops\WebShop.ViewModels\obj\Debug\net6.0\WebShop.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebShops\WebShops\WebShop.ViewModels\obj\Debug\net6.0\WebShop.ViewModels.AssemblyInfoInputs.cache
+D:\WebShops\WebShops\WebShop.ViewModels\obj\Debug\net6.0\WebShop.ViewModels.AssemblyInfo.cs
+D:\WebShops\WebShops\WebShop.ViewModels\obj\Debug\net6.0\WebShop.ViewModels.csproj.CoreCompileInputs.cache
+D:\WebShops\WebShops\WebShop.ViewModels\bin\Debug\net6.0\WebShop.ViewModels.deps.json
+D:\WebShops\WebShops\WebShop.ViewModels\bin\Debug\net6.0\WebShop.ViewModels.dll
+D:\WebShops\WebShops\WebShop.ViewModels\bin\Debug\net6.0\WebShop.ViewModels.pdb
+D:\WebShops\WebShops\WebShop.ViewModels\obj\Debug\net6.0\WebShop.ViewModels.dll
+D:\WebShops\WebShops\WebShop.ViewModels\obj\Debug\net6.0\refint\WebShop.ViewModels.dll
+D:\WebShops\WebShops\WebShop.ViewModels\obj\Debug\net6.0\WebShop.ViewModels.pdb
+D:\WebShops\WebShops\WebShop.ViewModels\obj\Debug\net6.0\ref\WebShop.ViewModels.dll

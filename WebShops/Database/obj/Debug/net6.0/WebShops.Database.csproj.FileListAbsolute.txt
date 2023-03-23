@@ -12,3 +12,17 @@ D:\NguyenMinhThuan\Asp.Net\WebShops\Database\obj\Debug\net6.0\refint\WebShops.Da
 D:\NguyenMinhThuan\Asp.Net\WebShops\Database\obj\Debug\net6.0\WebShops.Database.pdb
 D:\NguyenMinhThuan\Asp.Net\WebShops\Database\obj\Debug\net6.0\WebShops.Database.genruntimeconfig.cache
 D:\NguyenMinhThuan\Asp.Net\WebShops\Database\obj\Debug\net6.0\ref\WebShops.Database.dll
+D:\WebShops\WebShops\Database\bin\Debug\net6.0\WebShops.Database.deps.json
+D:\WebShops\WebShops\Database\bin\Debug\net6.0\WebShops.Database.runtimeconfig.json
+D:\WebShops\WebShops\Database\bin\Debug\net6.0\WebShops.Database.dll
+D:\WebShops\WebShops\Database\bin\Debug\net6.0\WebShops.Database.pdb
+D:\WebShops\WebShops\Database\obj\Debug\net6.0\WebShops.Database.csproj.AssemblyReference.cache
+D:\WebShops\WebShops\Database\obj\Debug\net6.0\WebShops.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebShops\WebShops\Database\obj\Debug\net6.0\WebShops.Database.AssemblyInfoInputs.cache
+D:\WebShops\WebShops\Database\obj\Debug\net6.0\WebShops.Database.AssemblyInfo.cs
+D:\WebShops\WebShops\Database\obj\Debug\net6.0\WebShops.Database.csproj.CoreCompileInputs.cache
+D:\WebShops\WebShops\Database\obj\Debug\net6.0\WebShops.Database.dll
+D:\WebShops\WebShops\Database\obj\Debug\net6.0\refint\WebShops.Database.dll
+D:\WebShops\WebShops\Database\obj\Debug\net6.0\WebShops.Database.pdb
+D:\WebShops\WebShops\Database\obj\Debug\net6.0\WebShops.Database.genruntimeconfig.cache
+D:\WebShops\WebShops\Database\obj\Debug\net6.0\ref\WebShops.Database.dll
