@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WebShops",
-    "\\WebShops\\WebShops.BackEndAPI"
+    "\\WebShops"
   ],
-  "SelectedNode": "\\WebShops\\WebShops.BackEndAPI\\Program.cs",
+  "SelectedNode": "\\WebShops\\WebShops.sln",
   "PreviewInSolutionExplorer": false
 }
