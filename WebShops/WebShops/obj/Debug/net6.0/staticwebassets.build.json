@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yHFs9nwowgH9IxjtYOK5+h8UQYFFnGRvpdgD9X/o/48=",
+  "Hash": "mKLEUQtgMXsnFUwRqwWmccvtN7VmPcH0dzpyM9XMoKs=",
   "Source": "WebShop.API",
   "BasePath": "_content/WebShop.API",
   "Mode": "Default",
@@ -34,6 +34,23 @@
       "OriginalItemSpec": "wwwroot\\user-content\\0deb97ff-4db5-446f-bc02-da395dcc6149.png"
     },
     {
+      "Identity": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\user-content\\1079a26e-8762-4839-a5ec-33d7d250f54d.png",
+      "SourceId": "WebShop.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\",
+      "BasePath": "_content/WebShop.API",
+      "RelativePath": "user-content/1079a26e-8762-4839-a5ec-33d7d250f54d.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-content\\1079a26e-8762-4839-a5ec-33d7d250f54d.png"
+    },
+    {
       "Identity": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\user-content\\11d967d2-d399-4e34-9a2f-3f9070c25008.jpg",
       "SourceId": "WebShop.API",
       "SourceType": "Discovered",
@@ -49,6 +66,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\user-content\\11d967d2-d399-4e34-9a2f-3f9070c25008.jpg"
+    },
+    {
+      "Identity": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\user-content\\1971131d-f9cf-47e5-971b-678892cacf89.png",
+      "SourceId": "WebShop.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\",
+      "BasePath": "_content/WebShop.API",
+      "RelativePath": "user-content/1971131d-f9cf-47e5-971b-678892cacf89.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-content\\1971131d-f9cf-47e5-971b-678892cacf89.png"
+    },
+    {
+      "Identity": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\user-content\\466ec02c-9670-4f08-9513-a36371cc8671.png",
+      "SourceId": "WebShop.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\",
+      "BasePath": "_content/WebShop.API",
+      "RelativePath": "user-content/466ec02c-9670-4f08-9513-a36371cc8671.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-content\\466ec02c-9670-4f08-9513-a36371cc8671.png"
     },
     {
       "Identity": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\user-content\\50223b58-08a2-4352-859b-7386c32c7048.png",
@@ -100,6 +151,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\user-content\\8bd75c9d-08bf-4339-af6f-6465d13119a1.png"
+    },
+    {
+      "Identity": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\user-content\\c733cf74-199d-4177-b193-91479ff7c4c5.png",
+      "SourceId": "WebShop.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\",
+      "BasePath": "_content/WebShop.API",
+      "RelativePath": "user-content/c733cf74-199d-4177-b193-91479ff7c4c5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-content\\c733cf74-199d-4177-b193-91479ff7c4c5.png"
+    },
+    {
+      "Identity": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\user-content\\ffab2402-1f3d-40bd-bff1-d47cf2c476e6.png",
+      "SourceId": "WebShop.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebShops\\WebShops\\WebShops\\wwwroot\\",
+      "BasePath": "_content/WebShop.API",
+      "RelativePath": "user-content/ffab2402-1f3d-40bd-bff1-d47cf2c476e6.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user-content\\ffab2402-1f3d-40bd-bff1-d47cf2c476e6.png"
     }
   ]
 }

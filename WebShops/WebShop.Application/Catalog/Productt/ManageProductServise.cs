@@ -54,12 +54,7 @@ namespace WebShop.Application.Catalog.Productt
             return productImage.Id;
         }
 
-        public async Task AddViewcount(int productId)
-        {
-            var product = await _context.Products.FindAsync(productId);
-            product.ViewCount += 1;
-            await _context.SaveChangesAsync();
-        }
+       
 
         public async Task<int> Create(ProductCreateRequest request)
         {
@@ -168,31 +163,7 @@ namespace WebShop.Application.Catalog.Productt
             return pagedResult;
         }
 
-        public async Task<ProductViewMode> GetById(int productId, string languageId)
-        {
-            var product = await _context.Products.FindAsync(productId);
-            var productTranslation = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == productId
-            && x.LanguageId == languageId);
-
-            var productViewModel = new ProductViewMode()
-            {
-                Id = product.Id,
-                DateCreacted = product.DateCreacted,
-                Description = productTranslation != null ? productTranslation.Description : null,
-                LanguageId = productTranslation.LanguageId,
-                Details = productTranslation != null ? productTranslation.Details : null,
-                Name = productTranslation != null ? productTranslation.Name : null,
-                Originalprice = product.Originalprice,
-                Price = product.Price,
-                SeoAlias = productTranslation != null ? productTranslation.SeoAlias : null,
-                SeoDescription = productTranslation != null ? productTranslation.SeoDescription : null,
-                SeoTitle = productTranslation != null ? productTranslation.SeoTitle : null,
-                Stock = product.Stock,
-                ViewCount = product.ViewCount
-            };
-            return productViewModel;
-        }
-
+       
         public async Task<ProductImageViewModel> GetImageById(int imageId)
         {
             var image = await _context.ProductImages.FindAsync(imageId);
@@ -213,7 +184,7 @@ namespace WebShop.Application.Catalog.Productt
             return viewModel;
         }
 
-        public async Task<List<ProductImageViewModel>> GetListImages(int productId)
+        public async Task<List<ProductImageViewModel>> GetListImage(int productId)
         {
             return await _context.ProductImages.Where(x => x.ProductId == productId)
                 .Select(i => new ProductImageViewModel()
@@ -294,9 +265,46 @@ namespace WebShop.Application.Catalog.Productt
         public async Task<bool> UpdateStock(int productId, int addedQuantity)
         {
             var product = await _context.Products.FindAsync(productId);
-            if (product == null) throw new WebShopExceptions($"Cannot find a product with id: {productId}");
+            if (product == null) throw new WebShopExceptions ($"Cannot find a product with id: {productId}");
             product.Stock += addedQuantity;
             return await _context.SaveChangesAsync() > 0;
+        }
+
+        public async Task AddViewCount(int productId)
+        {
+            var product = await _context.Products.FindAsync(productId);
+            product.ViewCount += 1;
+            await _context.SaveChangesAsync();
+        }
+
+        public Task<List<ProductViewMode>> GetAll(string languageId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<ProductViewMode> GetAllById(int productId, string languageId)
+        {
+            var product = await _context.Products.FindAsync(productId);
+            var productTranslation = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == productId
+            && x.LanguageId == languageId);
+
+            var productViewModel = new ProductViewMode()
+            {
+                Id = product.Id,
+                DateCreacted = product.DateCreacted,
+                Description = productTranslation != null ? productTranslation.Description : null,
+                LanguageId = productTranslation.LanguageId,
+                Details = productTranslation != null ? productTranslation.Details : null,
+                Name = productTranslation != null ? productTranslation.Name : null,
+                Originalprice = product.Originalprice,
+                Price = product.Price,
+                SeoAlias = productTranslation != null ? productTranslation.SeoAlias : null,
+                SeoDescription = productTranslation != null ? productTranslation.SeoDescription : null,
+                SeoTitle = productTranslation != null ? productTranslation.SeoTitle : null,
+                Stock = product.Stock,
+                ViewCount = product.ViewCount
+            };
+            return productViewModel;
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebShop.ViewModels.Catalog.Productt;
+using WebShop.ViewModels.Catalog.ProducttImages;
 using WebShop.ViewModels.Common;
 
 namespace WebShop.Application.Catalog.Productt
@@ -32,11 +33,11 @@ namespace WebShop.Application.Catalog.Productt
 
         Task<PagedResult<ProductViewMode>> GetAllPaging(GetManageProductPagingRequest request);
 
-        Task<int> AddImage(int productId, List<IFormFile> files);
+        Task<int> AddImage(int productId, ProductImageCreateRequest request);
 
         Task<int> RemoveImage(int imageId);
 
-        Task<int> UpdateImage(int imageId, string caption, bool Isdefault);
+        Task<int> UpdateImage(int imageId,ProductImageUpdateRequest request);
 
         Task<List<ProductImageViewModel>> GetListImage(int productId);
     }
