@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebShop.Application.Catalog.Productt;
 using WebShop.ViewModels.Catalog.Productt;
+using WebShop.ViewModels.Catalog.ProducttImages;
 
 namespace WebShop.API.Controllers
 {
@@ -10,82 +11,134 @@ namespace WebShop.API.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private readonly IPublicProductService _productService;
+        private readonly IPublicProductService _publicProductService;
         private readonly IManageProductService _manageProductService;
-        public ProductController(IPublicProductService publicProductService, IManageProductService manageProductService)
+
+        public ProductController(IPublicProductService publicProductService,
+            IManageProductService manageProductService)
         {
-            _productService = publicProductService;
+            _publicProductService = publicProductService;
             _manageProductService = manageProductService;
         }
 
-        [HttpGet("{LanguageId}")]
-        public async Task<IActionResult> Get(string languageId)
+        //http://localhost:port/products?pageIndex=1&pageSize=10&CategoryId=
+        [HttpGet("{languageId}")]
+        public async Task<IActionResult> GetAllPaging(string languageId, [FromQuery] GetPublictProductPadingRequest request)
         {
-            var products = await _productService.GetAll( languageId);
-            return Ok(products);
-
-        }
-
-        [HttpGet("public-paging")]
-        public async Task<IActionResult> Get([FromQuery] GetPublictProductPadingRequest request)
-        {
-            var products = await _productService.GetAllCategoryId(request);
+            var products = await _publicProductService.GetAllCategoryId(languageId, request);
             return Ok(products);
         }
-        [HttpGet("{Id}/{languageId}")]
-        public async Task<IActionResult> GetAllById(int productId,string languageId)
+
+        //http://localhost:port/product/1
+        [HttpGet("{productId}/{languageId}")]
+        public async Task<IActionResult> GetById(int productId, string languageId)
         {
-            var products = await _manageProductService.GetAllById(productId,languageId);
-            if (products == null)
-            {
-                return BadRequest("CanNot find product");
-            }
-
-            return Ok(products);
-
+            var product = await _manageProductService.GetById(productId, languageId);
+            if (product == null)
+                return BadRequest("Cannot find product");
+            return Ok(product);
         }
 
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
         {
-            var productId = await _manageProductService.Create(request);
-            if (productId == null)
+            if (!ModelState.IsValid)
             {
-                return BadRequest("Cannot Find product");
+                return BadRequest(ModelState);
             }
-            var product = _manageProductService.GetAllById(productId,request.LanguageId);
-            return CreatedAtAction(nameof(GetAllById), new { id = product }, product);
+            var productId = await _manageProductService.Create(request);
+            if (productId == 0)
+                return BadRequest();
+
+            var product = await _manageProductService.GetById(productId, request.LanguageId);
+
+            return CreatedAtAction(nameof(GetById), new { id = productId }, product);
         }
 
         [HttpPut]
         public async Task<IActionResult> Update([FromForm] ProductUpdateRequest request)
         {
-            var affectedResust = await _manageProductService.Update(request);
-            if (affectedResust == 0)
+            if (!ModelState.IsValid)
             {
-                return BadRequest("Cannot Find product");
+                return BadRequest(ModelState);
             }
+            var affectedResult = await _manageProductService.Update(request);
+            if (affectedResult == 0)
+                return BadRequest();
             return Ok();
         }
-        [HttpPut("Price/{newPrice}")]
-        public async Task<IActionResult> UpdatePrice([FromForm] int Id, decimal newPrice)
-        {
-            var isSuccessful = await _manageProductService.UpdatePrice(Id, newPrice);
-            if (isSuccessful)
-            {
-                return Ok();
-            }
-            return BadRequest("Cannot Find product");
-        }
-        [HttpDelete("productId")]
+
+        [HttpDelete("{productId}")]
         public async Task<IActionResult> Delete(int productId)
         {
-            var deleteId=await _manageProductService.Delete(productId);
-            if(deleteId == 0)
-            {
+            var affectedResult = await _manageProductService.Delete(productId);
+            if (affectedResult == 0)
                 return BadRequest();
-            }
             return Ok();
+        }
+
+        [HttpPatch("{productId}/{newPrice}")]
+        public async Task<IActionResult> UpdatePrice(int productId, decimal newPrice)
+        {
+            var isSuccessful = await _manageProductService.UpdatePrice(productId, newPrice);
+            if (isSuccessful)
+                return Ok();
+
+            return BadRequest();
+        }
+
+        //Images
+        [HttpPost("{productId}/images")]
+        public async Task<IActionResult> CreateImage(int productId, [FromForm] ProductImageCreateRequest request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var imageId = await _manageProductService.AddImage(productId, request);
+            if (imageId == 0)
+                return BadRequest();
+
+            var image = await _manageProductService.GetImageById(imageId);
+
+            return CreatedAtAction(nameof(GetImageById), new { id = imageId }, image);
+        }
+
+        [HttpPut("{productId}/images/{imageId}")]
+        public async Task<IActionResult> UpdateImage(int imageId, [FromForm] ProductImageUpdateRequest request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var result = await _manageProductService.UpdateImage(imageId, request);
+            if (result == 0)
+                return BadRequest();
+
+            return Ok();
+        }
+
+        [HttpDelete("{productId}/images/{imageId}")]
+        public async Task<IActionResult> RemoveImage(int imageId)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            var result = await _manageProductService.RemoveImage(imageId);
+            if (result == 0)
+                return BadRequest();
+
+            return Ok();
+        }
+
+        [HttpGet("{productId}/images/{imageId}")]
+        public async Task<IActionResult> GetImageById(int productId, int imageId)
+        {
+            var image = await _manageProductService.GetImageById(imageId);
+            if (image == null)
+                return BadRequest("Cannot find product");
+            return Ok(image);
         }
     }
 }

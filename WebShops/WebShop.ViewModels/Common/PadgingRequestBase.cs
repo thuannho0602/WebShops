@@ -10,6 +10,6 @@ namespace WebShop.ViewModels.Common
     {
         public int PageIndext { get; set; }
         public int PageSize { get; set; }
-        public int TotalRecords { get; set; }
+        
     }
 }

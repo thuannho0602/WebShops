@@ -22,7 +22,7 @@ builder.Services.AddDbContext<DemoDbcontext>(options =>
 
 builder.Services.AddTransient<IStorageService, FileStorageService>();
 builder.Services.AddTransient<IPublicProductService, PublicProductService>();
-builder.Services.AddTransient<IManageProductService, ManageProductService>();
+builder.Services.AddTransient<IManageProductService, ManageProductServise>();
 
 builder.Services.AddControllersWithViews();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

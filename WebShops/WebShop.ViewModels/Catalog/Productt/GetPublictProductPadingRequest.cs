@@ -9,8 +9,8 @@ namespace WebShop.ViewModels.Catalog.Productt
 {
     public class GetPublictProductPadingRequest : PadgingRequestBase
     {
-        public string LanguageId { get; set; }
-        public string Keyword { get; set; }
+       // public string LanguageId { get; set; }
+        //public string Keyword { get; set; }
         public int? CatogeryId { get; set; }
     }
 }
