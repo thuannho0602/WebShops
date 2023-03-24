@@ -30,13 +30,10 @@ namespace WebShop.Application.Catalog.Productt
 
         Task<int> RemoveImage(int imageId);
 
-<<<<<<< HEAD
         Task<int> UpdateImage(int imageId, ProductImageUpdateRequest request);
 
         Task<ProductImageViewModel> GetImageById(int imageId);
-=======
-        Task<int> UpdateImage(int imageId,ProductImageUpdateRequest request);
->>>>>>> add_images
+      
 
         Task<List<ProductImageViewModel>> GetListImages(int productId);
     }

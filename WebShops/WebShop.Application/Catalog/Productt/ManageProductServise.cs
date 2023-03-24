@@ -306,5 +306,20 @@ namespace WebShop.Application.Catalog.Productt
             };
             return productViewModel;
         }
+
+        public Task<ProductViewMode> GetById(int productId, string languageId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task AddViewcount(int productId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<ProductImageViewModel>> GetListImages(int productId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
