@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace  WebShop.ViewModels.Catalog.Productt
+namespace WebShop.ViewModels.Catalog.Productt
 {
     public class ProductViewMode
     {
