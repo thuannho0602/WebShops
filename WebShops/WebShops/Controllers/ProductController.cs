@@ -1,4 +1,5 @@
 ﻿using Demo.DataBase.Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebShop.Application.Catalog.Productt;
@@ -9,6 +10,7 @@ namespace WebShop.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[Authorize]
     public class ProductController : ControllerBase
     {
         private readonly IPublicProductService _publicProductService;
@@ -31,6 +33,8 @@ namespace WebShop.API.Controllers
 
         //http://localhost:port/product/1
         [HttpGet("{productId}/{languageId}")]
+        
+        //[HttpGet("{productId:Guid}/", Name = nameof(GetById))]
         public async Task<IActionResult> GetById(int productId, string languageId)
         {
             var product = await _manageProductService.GetById(productId, languageId);
@@ -47,13 +51,17 @@ namespace WebShop.API.Controllers
                 return BadRequest(ModelState);
             }
             var productId = await _manageProductService.Create(request);
+           
             if (productId == 0)
                 return BadRequest();
+            
 
             var product = await _manageProductService.GetById(productId, request.LanguageId);
-
-            return CreatedAtAction(nameof(GetById), new { id = productId }, product);
+            
+            
+            return CreatedAtAction(nameof(GetById), new { id = productId  }, product);
         }
+
 
         [HttpPut]
         public async Task<IActionResult> Update([FromForm] ProductUpdateRequest request)

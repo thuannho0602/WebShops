@@ -20,7 +20,7 @@ namespace WebShop.Application.Catalog.Productt
             _contex = contex;
         }
 
-        public async Task<List<ProductViewMode>> GetAll(string languageId)
+        public async Task<List<ProductViewModel>> GetAll(string languageId)
         {
             var query = from p in _contex.Products
                         join pt in _contex.ProductTranslations on p.Id equals pt.ProductId
@@ -30,7 +30,7 @@ namespace WebShop.Application.Catalog.Productt
                         where pt.LanguageId == languageId
                         select new { p, pt, pic };
             var data = await query
-               .Select(x => new ProductViewMode()
+               .Select(x => new ProductViewModel()
                {
                    Id = x.p.Id,
                    Name = x.pt.Name,
@@ -48,7 +48,7 @@ namespace WebShop.Application.Catalog.Productt
             return data;
         }
 
-        public async Task<PagedResult<ProductViewMode>> GetAllCategoryId(string languageId, GetPublictProductPadingRequest request)
+        public async Task<PagedResult<ProductViewModel>> GetAllCategoryId(string languageId, GetPublictProductPadingRequest request)
         {
             //1. Select join
             var query = from p in _contex.Products
@@ -67,7 +67,7 @@ namespace WebShop.Application.Catalog.Productt
 
             var data = await query.Skip((request.PageIndext - 1) * request.PageSize)
                 .Take(request.PageSize)
-                .Select(x => new ProductViewMode()
+                .Select(x => new ProductViewModel()
                 {
                     Id = x.p.Id,
                     Name = x.pt.Name,
@@ -85,7 +85,7 @@ namespace WebShop.Application.Catalog.Productt
                 }).ToListAsync();
 
             //4. Select and projection
-            var pagedResult = new PagedResult<ProductViewMode>()
+            var pagedResult = new PagedResult<ProductViewModel>()
             {
                 TotalRecord = totalRow,
                 Items = data

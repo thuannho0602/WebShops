@@ -13,8 +13,8 @@ namespace WebShop.Application.Catalog.Productt
     /// </summary>
     public interface IPublicProductService
     {
-       Task< PagedResult<ProductViewMode>> GetAllCategoryId(string languageId,GetPublictProductPadingRequest request);
+       Task< PagedResult<ProductViewModel>> GetAllCategoryId(string languageId,GetPublictProductPadingRequest request);
 
-        Task<List<ProductViewMode>> GetAll(string languageId);
+        Task<List<ProductViewModel>> GetAll(string languageId);
     }
 }
