@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebShop.ViewModels.Catalog.Productt
 {
-    public class ProductViewMode
+    public class ProductViewModel
     {
         public int Id { get; set; }
         public decimal Price { get; set; }

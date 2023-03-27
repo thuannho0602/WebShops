@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WebShops.Database.Migrations
 {
-    public partial class DataBaseShopweb : Migration
+    public partial class ShopWebEF : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -22,12 +22,12 @@ namespace WebShops.Database.Migrations
             migrationBuilder.InsertData(
                 table: "AppRole",
                 columns: new[] { "Id", "ConcurrencyStamp", "Description", "Name", "NormalizedName" },
-                values: new object[] { new Guid("30c3c812-22c7-41ee-8b82-b6d2ea0ae6cd"), "c263bf02-aa9a-4e85-94c1-2f5cee9e6c28", "Administrator role", "admin", "admin" });
+                values: new object[] { new Guid("30c3c812-22c7-41ee-8b82-b6d2ea0ae6cd"), "29541235-268d-469c-8592-407ee955f10e", "Administrator role", "admin", "admin" });
 
             migrationBuilder.InsertData(
                 table: "AppUser",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "DOB", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { new Guid("1bf6041a-0963-4eb7-bbdc-0ab25b0e301d"), 0, "9de65f08-5149-4330-bfa1-163370edcd17", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "thuannho0602@gmail.com", true, "THuan", "Nguyen", false, null, "thuannho0602@gmail.com", "admin", "AQAAAAEAACcQAAAAENSNharkYfvsrduiS2810lSn34yyIbCITT8T8vgr3un5qHvyVWzTujRbqhCm1yhOFw==", null, false, "", false, "admin" });
+                values: new object[] { new Guid("1bf6041a-0963-4eb7-bbdc-0ab25b0e301d"), 0, "86ebae52-a3ad-49f0-ad85-9f6454c96565", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "thuannho0602@gmail.com", true, "THuan", "Nguyen", false, null, "thuannho0602@gmail.com", "admin", "AQAAAAEAACcQAAAAEBHgfIhczYlCJbruO4JPkjOgzppZvvxNLbLPErF7ER998vFt7BuDhUpoWnWksR7j7Q==", null, false, "", false, "admin" });
 
             migrationBuilder.InsertData(
                 table: "Category",
@@ -52,8 +52,8 @@ namespace WebShops.Database.Migrations
                 columns: new[] { "Id", "DateCreacted", "IsFeaatured", "Originalprice", "Price" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 3, 23, 17, 19, 10, 550, DateTimeKind.Local).AddTicks(6736), false, 10000m, 2000m },
-                    { 2, new DateTime(2023, 3, 23, 17, 19, 10, 550, DateTimeKind.Local).AddTicks(6751), false, 10000m, 2000m }
+                    { 1, new DateTime(2023, 3, 27, 10, 17, 24, 703, DateTimeKind.Local).AddTicks(3436), false, 10000m, 2000m },
+                    { 2, new DateTime(2023, 3, 27, 10, 17, 24, 703, DateTimeKind.Local).AddTicks(3448), false, 10000m, 2000m }
                 });
 
             migrationBuilder.InsertData(

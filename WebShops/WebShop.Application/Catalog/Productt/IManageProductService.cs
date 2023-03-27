@@ -17,14 +17,14 @@ namespace WebShop.Application.Catalog.Productt
 
         Task<int> Delete(int productId);
 
-        Task<ProductViewMode> GetById(int productId, string languageId);
+        Task<ProductViewModel> GetById(int productId, string languageId);
 
         Task<bool> UpdatePrice(int productId, decimal newPrice);
         Task<bool> UpdateStock(int productId, int addedQuantity);
 
         Task AddViewcount(int productId);
 
-        Task<PagedResult<ProductViewMode>> GetAllPaging(GetManageProductPagingRequest request);
+        Task<PagedResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request);
 
         Task<int> AddImage(int productId, ProductImageCreateRequest request);
 

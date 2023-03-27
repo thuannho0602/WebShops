@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace WebShops.Database.Migrations
 {
     [DbContext(typeof(DemoDbcontext))]
-    [Migration("20230323101239_DataBaseShopWeb22")]
-    partial class DataBaseShopWeb22
+    [Migration("20230327031603_WebshopDataEF")]
+    partial class WebshopDataEF
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

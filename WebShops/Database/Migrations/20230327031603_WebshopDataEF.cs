@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WebShops.Database.Migrations
 {
-    public partial class DataBaseShopWeb22 : Migration
+    public partial class WebshopDataEF : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

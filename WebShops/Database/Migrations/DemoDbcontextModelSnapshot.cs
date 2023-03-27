@@ -82,7 +82,7 @@ namespace WebShops.Database.Migrations
                         new
                         {
                             Id = new Guid("30c3c812-22c7-41ee-8b82-b6d2ea0ae6cd"),
-                            ConcurrencyStamp = "c263bf02-aa9a-4e85-94c1-2f5cee9e6c28",
+                            ConcurrencyStamp = "29541235-268d-469c-8592-407ee955f10e",
                             Description = "Administrator role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -159,7 +159,7 @@ namespace WebShops.Database.Migrations
                         {
                             Id = new Guid("1bf6041a-0963-4eb7-bbdc-0ab25b0e301d"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "9de65f08-5149-4330-bfa1-163370edcd17",
+                            ConcurrencyStamp = "86ebae52-a3ad-49f0-ad85-9f6454c96565",
                             DOB = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "thuannho0602@gmail.com",
                             EmailConfirmed = true,
@@ -168,7 +168,7 @@ namespace WebShops.Database.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "thuannho0602@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAENSNharkYfvsrduiS2810lSn34yyIbCITT8T8vgr3un5qHvyVWzTujRbqhCm1yhOFw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEBHgfIhczYlCJbruO4JPkjOgzppZvvxNLbLPErF7ER998vFt7BuDhUpoWnWksR7j7Q==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -493,7 +493,7 @@ namespace WebShops.Database.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreacted = new DateTime(2023, 3, 23, 17, 19, 10, 550, DateTimeKind.Local).AddTicks(6736),
+                            DateCreacted = new DateTime(2023, 3, 27, 10, 17, 24, 703, DateTimeKind.Local).AddTicks(3436),
                             IsFeaatured = false,
                             Originalprice = 10000m,
                             Price = 2000m,
@@ -503,7 +503,7 @@ namespace WebShops.Database.Migrations
                         new
                         {
                             Id = 2,
-                            DateCreacted = new DateTime(2023, 3, 23, 17, 19, 10, 550, DateTimeKind.Local).AddTicks(6751),
+                            DateCreacted = new DateTime(2023, 3, 27, 10, 17, 24, 703, DateTimeKind.Local).AddTicks(3448),
                             IsFeaatured = false,
                             Originalprice = 10000m,
                             Price = 2000m,

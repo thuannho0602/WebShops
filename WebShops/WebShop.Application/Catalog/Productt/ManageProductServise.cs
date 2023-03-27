@@ -116,7 +116,7 @@ namespace WebShop.Application.Catalog.Productt
             return await _context.SaveChangesAsync();
         }
 
-        public async Task<PagedResult<ProductViewMode>> GetAllPaging(GetManageProductPagingRequest request)
+        public async Task<PagedResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request)
         {
             //1. Select join
             var query = from p in _context.Products
@@ -137,7 +137,7 @@ namespace WebShop.Application.Catalog.Productt
 
             var data = await query.Skip((request.PageIndext - 1) * request.PageSize)
                 .Take(request.PageSize)
-                .Select(x => new ProductViewMode()
+                .Select(x => new ProductViewModel()
                 {
                     Id = x.p.Id,
                     Name = x.pt.Name,
@@ -155,7 +155,7 @@ namespace WebShop.Application.Catalog.Productt
                 }).ToListAsync();
 
             //4. Select and projection
-            var pagedResult = new PagedResult<ProductViewMode>()
+            var pagedResult = new PagedResult<ProductViewModel>()
             {
                 TotalRecord = totalRow,
                 Items = data
@@ -277,18 +277,18 @@ namespace WebShop.Application.Catalog.Productt
             await _context.SaveChangesAsync();
         }
 
-        public Task<List<ProductViewMode>> GetAll(string languageId)
+        public Task<List<ProductViewModel>> GetAll(string languageId)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<ProductViewMode> GetAllById(int productId, string languageId)
+        public async Task<ProductViewModel> GetById(int productId, string languageId)
         {
             var product = await _context.Products.FindAsync(productId);
             var productTranslation = await _context.ProductTranslations.FirstOrDefaultAsync(x => x.ProductId == productId
             && x.LanguageId == languageId);
 
-            var productViewModel = new ProductViewMode()
+            var productViewModel = new ProductViewModel()
             {
                 Id = product.Id,
                 DateCreacted = product.DateCreacted,
@@ -307,10 +307,8 @@ namespace WebShop.Application.Catalog.Productt
             return productViewModel;
         }
 
-        public Task<ProductViewMode> GetById(int productId, string languageId)
-        {
-            throw new NotImplementedException();
-        }
+
+
 
         public Task AddViewcount(int productId)
         {
