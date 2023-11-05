@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WebShops\\WebShops\\WebShops.Utilities\\WebShops.Utilities.csproj": {}
+    "D:\\Git\\WebShops\\WebShops\\WebShops.Utilities\\WebShops.Utilities.csproj": {}
   },
   "projects": {
-    "D:\\WebShops\\WebShops\\WebShops.Utilities\\WebShops.Utilities.csproj": {
+    "D:\\Git\\WebShops\\WebShops\\WebShops.Utilities\\WebShops.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WebShops\\WebShops\\WebShops.Utilities\\WebShops.Utilities.csproj",
+        "projectUniqueName": "D:\\Git\\WebShops\\WebShops\\WebShops.Utilities\\WebShops.Utilities.csproj",
         "projectName": "WebShops.Utilities",
-        "projectPath": "D:\\WebShops\\WebShops\\WebShops.Utilities\\WebShops.Utilities.csproj",
+        "projectPath": "D:\\Git\\WebShops\\WebShops\\WebShops.Utilities\\WebShops.Utilities.csproj",
         "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
-        "outputPath": "D:\\WebShops\\WebShops\\WebShops.Utilities\\obj\\",
+        "outputPath": "D:\\Git\\WebShops\\WebShops\\WebShops.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

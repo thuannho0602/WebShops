@@ -3544,11 +3544,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WebShops\\WebShops\\WebShops\\WebShop.API.csproj",
+      "projectUniqueName": "D:\\Git\\WebShops\\WebShops\\WebShops\\WebShop.API.csproj",
       "projectName": "WebShop.API",
-      "projectPath": "D:\\WebShops\\WebShops\\WebShops\\WebShop.API.csproj",
+      "projectPath": "D:\\Git\\WebShops\\WebShops\\WebShops\\WebShop.API.csproj",
       "packagesPath": "C:\\Users\\AD\\.nuget\\packages\\",
-      "outputPath": "D:\\WebShops\\WebShops\\WebShops\\obj\\",
+      "outputPath": "D:\\Git\\WebShops\\WebShops\\WebShops\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3570,17 +3570,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\WebShops\\WebShops\\Database\\WebShops.Database.csproj": {
-              "projectPath": "D:\\WebShops\\WebShops\\Database\\WebShops.Database.csproj"
+            "D:\\Git\\WebShops\\WebShops\\Database\\WebShops.Database.csproj": {
+              "projectPath": "D:\\Git\\WebShops\\WebShops\\Database\\WebShops.Database.csproj"
             },
-            "D:\\WebShops\\WebShops\\WebShop.Application\\WebShop.Application.csproj": {
-              "projectPath": "D:\\WebShops\\WebShops\\WebShop.Application\\WebShop.Application.csproj"
+            "D:\\Git\\WebShops\\WebShops\\WebShop.Application\\WebShop.Application.csproj": {
+              "projectPath": "D:\\Git\\WebShops\\WebShops\\WebShop.Application\\WebShop.Application.csproj"
             },
-            "D:\\WebShops\\WebShops\\WebShop.ViewModels\\WebShop.ViewModels.csproj": {
-              "projectPath": "D:\\WebShops\\WebShops\\WebShop.ViewModels\\WebShop.ViewModels.csproj"
+            "D:\\Git\\WebShops\\WebShops\\WebShop.ViewModels\\WebShop.ViewModels.csproj": {
+              "projectPath": "D:\\Git\\WebShops\\WebShops\\WebShop.ViewModels\\WebShop.ViewModels.csproj"
             },
-            "D:\\WebShops\\WebShops\\WebShops.Utilities\\WebShops.Utilities.csproj": {
-              "projectPath": "D:\\WebShops\\WebShops\\WebShops.Utilities\\WebShops.Utilities.csproj"
+            "D:\\Git\\WebShops\\WebShops\\WebShops.Utilities\\WebShops.Utilities.csproj": {
+              "projectPath": "D:\\Git\\WebShops\\WebShops\\WebShops.Utilities\\WebShops.Utilities.csproj"
             }
           }
         }

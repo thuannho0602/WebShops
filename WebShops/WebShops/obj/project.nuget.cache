@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w/Zf+mKN1uWE2B+l6mawAGrbX7pesRDLhGm8dfUCeRB2wQHtuwEo2ymL6F1yJT7HFcM6E2IoTGk9rPdRwypvQg==",
+  "dgSpecHash": "Gjij2LbHWmXPp+3RvU53tJktrXojTXeJrP51RnslAg6zuCb46gGE8swHjWicnr6RTMnX1ufiY7YJ6RICJaxx3g==",
   "success": true,
-  "projectFilePath": "D:\\WebShops\\WebShops\\WebShops\\WebShop.API.csproj",
+  "projectFilePath": "D:\\Git\\WebShops\\WebShops\\WebShops\\WebShop.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AD\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\AD\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VY6wtI2ggSgUfVdaCxpWJ4xcHOdwIZvcXVCWX7mCdIYijARkx78kp1AdP9GvtxbDaQ+KxHuzdcgA7bdqpcxp1A==",
+  "dgSpecHash": "icWDDUddKrK06OZNIpkOEA+g7niqvpEFDwcs2oubfuRVFL6kDwH5WUnl6xJnWTRntOrHQLiZlJNFmD0NAhUiEQ==",
   "success": true,
-  "projectFilePath": "D:\\WebShops\\WebShops\\WebShop.ViewModels\\WebShop.ViewModels.csproj",
+  "projectFilePath": "D:\\Git\\WebShops\\WebShops\\WebShop.ViewModels\\WebShop.ViewModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AD\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.14\\microsoft.aspnetcore.http.features.5.0.14.nupkg.sha512",
     "C:\\Users\\AD\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
